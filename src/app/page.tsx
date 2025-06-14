@@ -10,7 +10,7 @@ const HomePage = () => {
       <p className='text-lg text-gray-600 mb-8'>
         Fast and simple support ticket management system.
       </p>
-
+      
       <div className='flex flex-col md:flex-row gap-4 justify-center animate-slide opacity-0'>
         <Link
           href='/tickets/new'
