@@ -1,7 +1,14 @@
 import Link from "next/link";
 import { FaTicketAlt } from "react-icons/fa";
+import TokenReceiver from "@/components/TokenReceiver";
+import CheckUser from "@/components/CheckUser";
+
+
 const HomePage = () => {
   return (
+    <>
+    <TokenReceiver />
+    <CheckUser />
     <main className='flex flex-col text-center items-center justify-center min-h-screen px-4'>
       <FaTicketAlt className='mx-auto mb-4 text-red-600' size={60} />
       <h1 className='text-4xl md:text-5xl font-bold mb-4 text-blue-600'>
@@ -26,6 +33,7 @@ const HomePage = () => {
         </Link>
       </div>
     </main>
+    </>
   );
 }
 
